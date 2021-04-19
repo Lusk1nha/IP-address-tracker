@@ -20,7 +20,7 @@ body {
   background-color: white;
 
   min-width: 250px;
-  min-height: 75vh;
+  min-height: 74vh;
 
   display: flex;
   flex-direction: column;
@@ -86,7 +86,7 @@ header .input-container {
 
 }
 
-.input-container .ip-input {
+.input-container .input {
   width: 100%;
   height: 60px;
 
@@ -97,6 +97,17 @@ header .input-container {
 
   border: none;
   border-radius: 16px 0px 0px 16px;
+  outline: none;
+
+}
+
+.input-container .input--state-error {
+  border: 1px solid rgb(224, 65, 65);
+
+}
+
+.input-container .input--state-error::placeholder {
+  color: rgb(224, 65, 65);
 
 }
 
@@ -110,10 +121,23 @@ header .input-container {
 
   cursor: pointer;
 
+  transition: background 0.2s;
+
 }
+
 
 .input-container .ip-send:hover {
   background-color: var(--very-dark-gray);
+
+}
+
+.input-container .input--state-error ~ .ip-send {
+  background-color: rgb(224, 65, 65);
+
+}
+
+.input-container .input--state-error ~ .ip-send:hover {
+  background-color: rgb(209, 43, 43);
 
 }
 

@@ -20,30 +20,30 @@
     <h1 class="title">IP Address Tracker</h1>
 
     <form class="input-container">
-      <input class="ip-input" type="text" value="192.212.174.101" placeholder="Example 192.212.174.101" aria-label="ip-address">
-      <button class="ip-send" type="button"><img src="./assets/icon-arrow.svg" alt="arrow-right"></button>
+      <input class="input" type="text" placeholder="Search for any IP address or domain" aria-label="ip-address">
+      <button class="ip-send" type="submit"><img src="./assets/icon-arrow.svg" alt="arrow-right"></button>
     </form>
 
     <section class="ip-infos">
       <div class="info">
         <h6>IP ADDRESS</h6>
-        <h2 class="address">192.212.174.101</h2>
+        <h2 class="address"></h2>
 
       </div>
 
       <div class="info">
         <h6>LOCATION</h6>
-        <h2 class="location">Brooklyn, NY 10001</h2>
+        <h2 class="location"></h2>
       </div>
 
       <div class="info">
         <h6>TIMEZONE</h6>
-        <h2 class="timezone">UTC -05:00</h2>
+        <h2 class="timezone"></h2>
       </div>
 
       <div class="info">
         <h6>ISP</h6>
-        <h2 class="isp">SpaceX Starlink</h2>
+        <h2 class="isp"></h2>
       </div>
 
     </section>
@@ -56,5 +56,8 @@
   </main>
 
   <script src="./index.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', getLocation())
+  </script>
 </body>
 </html>
