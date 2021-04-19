@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="shortcut icon" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/responsive.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="crossorigin=""></script>
+
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+</head>
+<body>
+  <header>
+    <h1 class="title">IP Address Tracker</h1>
+
+    <form class="input-container">
+      <input class="ip-input" type="text" value="192.212.174.101" placeholder="Example 192.212.174.101" aria-label="ip-address">
+      <button class="ip-send" type="button"><img src="./assets/icon-arrow.svg" alt="arrow-right"></button>
+    </form>
+
+    <section class="ip-infos">
+      <div class="info">
+        <h6>IP ADDRESS</h6>
+        <h2 class="address">192.212.174.101</h2>
+
+      </div>
+
+      <div class="info">
+        <h6>LOCATION</h6>
+        <h2 class="location">Brooklyn, NY 10001</h2>
+      </div>
+
+      <div class="info">
+        <h6>TIMEZONE</h6>
+        <h2 class="timezone">UTC -05:00</h2>
+      </div>
+
+      <div class="info">
+        <h6>ISP</h6>
+        <h2 class="isp">SpaceX Starlink</h2>
+      </div>
+
+    </section>
+
+  </header>
+
+  <main class="map-container">
+    <div id="mapid"></div>
+
+  </main>
+
+  <script src="./index.js"></script>
+</body>
+</html>

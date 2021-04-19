@@ -1,0 +1,65 @@
+@media screen and (min-width: 700px) {
+  body {
+    min-height: 100vh;
+
+  }
+
+  header {
+    height: 200px;
+    
+    justify-content: flex-start;
+
+    padding-top: 50px;
+    
+    z-index: 2;
+
+  }
+
+  header::before {
+    width: 100%;
+    height: 270px;
+  
+  }
+
+  header .input-container {
+    max-width: 600px;
+
+  }
+
+  header .ip-infos {
+    max-width: 1200px;
+    width: 90%;
+
+    flex-direction: row;
+    justify-content: space-around;
+
+    margin-bottom: -110px;
+
+  }
+
+  .ip-infos .info {
+    width: 300px;
+    height: 70%;
+
+    padding: 10px 40px 10px 20px;
+
+    text-align: start;
+
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    border-right: 1px solid var(--dark-gray);
+
+  }
+
+  .ip-infos .info:last-child {
+    border: none;
+
+  }
+
+  main {
+    height: 100vh;
+
+  }
+
+}
