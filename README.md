@@ -7,6 +7,7 @@ In this implementation, I used the IP Geolocation API to obtain the Country, Cit
 And with Latitude and Longitude, pass them through the Leaflet Map to show the exact location on the map. 
 
 [Geolocation API](https://geo.ipify.org/)
+
 [Leaflet Map](https://leafletjs.com/)
 
 [This is a challenge of FrontEnd Mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0).
